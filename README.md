@@ -43,26 +43,22 @@ s.n. dasgupta
 
 ## OUTPUT
 cat < file1
-![Alt text](img/1.png)
+![Alt text](img/Screenshot_001.png)
 
 ## OUTPUT
 cat < file2
-![Alt text](img/2.png)
-
+![Alt text](img/Screenshot_002.png)
 # Comparing Files
 
 ## OUTPUT
 cmp file1 file2
-
- ![Alt text](img/3.png)
+![Alt text](img/Screenshot_003.png)
  ## OUTPUT
 comm file1 file2
-![Alt text](img/4.png)
-
+![Alt text](img/Screenshot_004.png)
 ## OUTPUT
 diff file1 file2
-![Alt text](img/5.png)
-
+![Alt text](img/Screenshot_005.png)
 # Filters
 
 ### Create the following files file11, file22 as follows:
@@ -83,17 +79,16 @@ cat > file22
 
 ## OUTPUT
 cut -c1-3 file11
-![Alt text](img/6.png)
-
-
+![Alt text](img/Screenshot_006.png)
+![Alt text](img/Screenshot_008.png)
 ## OUTPUT
 cut -d "|" -f 1 file22
-
-![Alt text](img/7.png)
-
+![Alt text](img/Screenshot_007.png)
+![Alt text](img/Screenshot_009.png)
 ## OUTPUT
 cut -d "|" -f 2 file22
-![Alt text](img/8.png)
+![Alt text](img/Screenshot_010.png)
+
 ### Create the following file newfile as follows:
 
 cat < newfile 
@@ -105,28 +100,28 @@ hello world
 
 ## OUTPUT
 grep Hello newfile 
-![Alt text](img/9.png)
+![Alt text](img/Screenshot_013.png)
 ## OUTPUT
 grep hello newfile 
-![Alt text](img/10.png)
+![Alt text](img/Screenshot_013.png)
 ## OUTPUT
 grep -v hello newfile 
-![Alt text](img/11.png)
+![Alt text](img/Screenshot_014.png)
 
 ## OUTPUT
 cat newfile | grep -i "hello"
-![Alt text](img/12.png)
+![Alt text](img/Screenshot_015.png)
 
 ## OUTPUT
 cat newfile | grep -i -c "hello"
-![Alt text](img/13.png)
+![Alt text](img/Screenshot_015.png)
 
 ## OUTPUT
 grep -R ubuntu /etc
-![Alt text](img/14.png)
+![Alt text](img/Screenshot_016.png)
 ## OUTPUT
 grep -w -n world newfile   
-![Alt text](img/15.png)
+![Alt text](img/Screenshot_017.png)
 ### Create the following file newfile as follows:
 
 cat < newfile 
@@ -142,35 +137,37 @@ Linux is best in this World
 
 ## OUTPUT
 egrep -w 'Hello|hello' newfile 
-![Alt text](img/16.png)
+![Alt text](img/Screenshot_019.png)
+![Alt text](img/Screenshot_020.png)
 ## OUTPUT
 egrep -w '(H|h)ello' newfile 
-![Alt text](img/17.png)
+![Alt text](img/Screenshot_021.png)
 ## OUTPUT
 egrep -w '(H|h)ell[a-z]' newfile 
-![Alt text](img/18.png)
+![Alt text](img/Screenshot_023.png)
 ## OUTPUT
 egrep '(^hello)' newfile 
-![Alt text](img/19.png)
+![Alt text](img/Screenshot_024.png)
 ## OUTPUT
 egrep '(world$)' newfile 
-![Alt text](img/20.png)
+![Alt text](img/Screenshot_025.png)
 
 ## OUTPUT
 egrep '((W|w)orld$)' newfile 
-![Alt text](img/21.png)
+![Alt text](img/Screenshot_027.png)
 ## OUTPUT
 egrep '[1-9]' newfile 
-![Alt text](img/22.png)
+![Alt text](img/Screenshot_028.png)
 ## OUTPUT
 egrep 'Linux.*world' newfile 
-![Alt text](img/23.png)
+![Alt text](img/Screenshot_030.png)
 ## OUTPUT
 egrep l{2} newfile
-![Alt text](img/24.png)
+![Alt text](img/Screenshot_030.png)
+
 ## OUTPUT 
 egrep 's{1,2}' newfile
-![Alt text](img/25.png)
+![Alt text](img/Screenshot_031.png)
 ### Create the following file file23 as follows:
 cat > file23
 ```
@@ -187,52 +184,53 @@ cat > file23
 
 ## OUTPUT
 sed -n -e '3p' file23
-![Alt text](img/26.png)
+![Alt text](img/Screenshot_032.png)
+![Alt text](img/Screenshot_033.png)
 ## OUTPUT
 sed -n -e '$p' file23
-![Alt text](img/27.png)
+![Alt text](img/Screenshot_034.png)
 ## OUTPUT
 sed  -e 's/Ram/Sita/' file23
-![Alt text](img/28.png)
+![Alt text](img/Screenshot_035.png)
 ## OUTPUT
 sed  -e '2s/Ram/Sita/' file23
-![Alt text](img/29.png)
+![Alt text](img/Screenshot_036.png)
 ## OUTPUT
 sed  '/tom/s/5000/6000/' file23
-![Alt text](img/30.png)
+![Alt text](img/Screenshot_037.png)
 ## OUTPUT
 sed -n -e '1,5p' file23
-![Alt text](img/31.png)
+![Alt text](img/Screenshot_038.png)
 ## OUTPUT
 sed -n -e '2,/Joe/p' file23
-![Alt text](img/32.png)
+![Alt text](img/Screenshot_039.png)
 ## OUTPUT
 sed -n -e '/tom/,/Joe/p' file23
-![Alt text](img/33.png)
+![Alt text](img/Screenshot_039.png)
 ## OUTPUT
 seq 10 
-![Alt text](img/34.png)
+![Alt text](img/Screenshot_040.png)
 ## OUTPUT
 seq 10 | sed -n '4,6p'
-![Alt text](img/35.png)
+![Alt text](img/Screenshot_041.png)
 ## OUTPUT
 seq 10 | sed -n '2,~4p'
-![Alt text](img/36.png)
+![Alt text](img/Screenshot_042.png)
 ## OUTPUT
 seq 3 | sed '2a hello'
-![Alt text](img/37.png)
+![Alt text](img/Screenshot_043.png)
 ## OUTPUT
 seq 2 | sed '2i hello'
-![Alt text](img/38.png)
+![Alt text](img/Screenshot_044.png)
 ## OUTPUT
 seq 10 | sed '2,9c hello'
-![Alt text](img/39.png)
+![Alt text](img/Screenshot_045.png)
 ## OUTPUT
 sed -n '2,4{s/^/$/;p}' file23
-![Alt text](img/40.png)
+![Alt text](img/Screenshot_046.png)
 ## OUTPUT
 sed -n '2,4{s/$/*/;p}' file23
-![Alt text](img/41.png)
+![Alt text](img/Screenshot_047.png)
 # Sorting File content
 ### Create the following file file21 file24 as follows:
 cat > file21
@@ -255,10 +253,10 @@ cat > file24
 
 ## OUTPUT
 sort file21
-![Alt text](img/42.png)
+![Alt text](img/Screenshot_048.png)
 ## OUTPUT
 uniq file24
-![Alt text](img/43.png)
+![Alt text](img/Screenshot_049.png)
 # Using tr command
 ### Create the following file urllist.txt as follows:
 cat < urllist.txt
@@ -271,13 +269,14 @@ www. mrcet.... com
 
  ## OUTPUT
 cat file23 | tr [:lower:] [:upper:]
-![Alt text](img/44.png)
+![Alt text](img/Screenshot_050.png)
  ## OUTPUT
 cat urllist.txt | tr -d ' '
-![Alt text](img/45.png)
+![Alt text](img/Screenshot_053.png)
+![Alt text](img/Screenshot_054.png)
 ## OUTPUT
 cat urllist.txt | tr -d ' ' | tr -s '.'
-![Alt text](img/46.png)
+![Alt text](img/Screenshot_055.png)
 # Backup commands
 ### commands
 mkdir backupdir
@@ -286,22 +285,22 @@ cd backupdir
 
 ## OUTPUT
 tar -cvf backup.tar *
-![Alt text](img/47.png)
+![Alt text](img/Screenshot_056.png)
 
 ## OUTPUT
 tar -tvf backup.tar
-![Alt text](img/48.png)
+![Alt text](img/Screenshot_058.png)
 ## OUTPUT
 tar -xvf backup.tar
-![Alt text](img/49.png)
+![Alt text](img/Screenshot_059.png)
 
 ## OUTPUT
 gzip backup.tar
 ls .gz
-![Alt text](img/50.png)
+![Alt text](img/Screenshot_060.png)
 ## OUTPUT
-gunzip backup.tar.gz
-![Alt text](img/51.png)
+gunzi![Alt text](img/Screenshot_062.png)p backup.tar.gz
+
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
@@ -310,7 +309,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 ## OUTPUT
 chmod 755 my-script.sh
 ./my-script.sh
-![Alt text](img/52.png)
+![Alt text](img/Screenshot_063.png)
 # commands 
 cat << stop > herecheck.txt
 ```
@@ -322,7 +321,7 @@ stop
 
 ## OUTPUT
 cat herecheck.txt
-![Alt text](img/53.png)
+![Alt text](img/Screenshot_065.png)
 # commands 
 cat < scriptest.sh 
 ```bash
@@ -359,13 +358,13 @@ chmod 777 scriptest.sh
  
 ## OUTPUT
 ./scriptest.sh 1 2 3
- ![Alt text](img/54.png)
+![Alt text](img/Screenshot_068.png)
 ## OUTPUT
 ls file1
-![Alt text](img/55.png)
+![Alt text](img/Screenshot_069.png)
 ## OUTPUT 
 echo $?
-![Alt text](img/56.png)
+![Alt text](img/Screenshot_070.png)
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -398,7 +397,7 @@ fi
 chmod 755 strcomp.sh
 ./strcomp.sh 
 ## OUTPUT
-![Alt text](img/57.png)
+![Alt text](img/Screenshot_076.png)
 # check file ownership
 cat < psswdperm.sh 
 ```bash
@@ -425,7 +424,7 @@ fi
 
 ## OUTPUT
 ./psswdperm.sh
-![Alt text](img/58.png)
+![Alt text](img/Screenshot_077.png)
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -471,7 +470,7 @@ fi
 ```
 
 ## OUTPUT
-![Alt text](img/59.png)
+![Alt text](img/Screenshot_080.png)
 ./ifnested.sh 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -510,7 +509,7 @@ fi
 ## OUTPUT
 $ chmod 755 iftest.sh
 $ ./iftest.sh 
-![Alt text](img/60.png)
+![Alt text](img/Screenshot_081.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -557,7 +556,7 @@ fi
 ## OUTPUT
 $ chmod 755 ifnested.sh
 $ ./ifnested.sh 
-![Alt text](img/61.png)
+![Alt text](img/Screenshot_085.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -583,7 +582,7 @@ fi
 ## OUTPUT
 $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
-![Alt text](img/62.png)
+![Alt text](img/Screenshot_086.png)
 # testing compound comparisons
 cat> ifcompound.sh 
 ```bash
@@ -598,7 +597,7 @@ fi
 ## OUTPUT
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
-![Alt text](img/63.png)
+![Alt text](img/Screenshot_087.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -617,7 +616,7 @@ esac
  ## OUTPUT
 $ chmod 755 casecheck.sh 
 $ ./casecheck.sh
-![Alt text](img/64.png)
+![Alt text](img/Screenshot_088.png)
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -632,7 +631,7 @@ done
 ## OUTPUT
 $ chmod 755 whiletest.sh
 $ ./whiletest.sh
-![Alt text](img/65.png)
+![Alt text](img/Screenshot_090.png)
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -645,7 +644,7 @@ done
 ``` 
 ## OUTPUT
 chmod 755 untiltest.sh
-![Alt text](img/66.png)
+![Alt text](img/Screenshot_092.png)
 cat > forin1.sh 
 ```bash
 \#!/bin/bash
@@ -657,7 +656,7 @@ done
 ```
 ## OUTPUT
 chmod 755 forin1.sh
-![Alt text](img/67.png)
+![Alt text](img/Screenshot_093.png)
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -670,7 +669,7 @@ done
 ## OUTPUT
 chmod 755 forin2.sh
 ./forin2.sh 
-![Alt text](img/68.png)
+![Alt text](img/Screenshot_095.png)
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -682,7 +681,7 @@ done
 ```
 ## OUTPUT
 ./forin3.sh 
-![Alt text](img/69.png)
+![Alt text](img/Screenshot_098.png)
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -694,7 +693,7 @@ done
 ```
 ## OUTPUT
 chmod 755 forin1.sh
-![Alt text](img/70.png)
+![Alt text](img/Screenshot_101.png)
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -716,7 +715,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-![Alt text](img/71.png)
+![Alt text](img/Screenshot_101.png)
 cat forctype.sh 
 ```bash
 #!/bin/bash
@@ -729,7 +728,7 @@ done
 ## OUTPUT
 chmod 755 forctype.sh
 ./forctype.sh 
-![Alt text](img/72.png)
+![Alt text](img/Screenshot_103.png)
 
 cat forctype1.sh 
 ```bash
@@ -743,7 +742,7 @@ done
 ## OUTPUT
 chmod 755 forctype.sh
 ./forctype1.sh 
-![Alt text](img/73.png)
+![Alt text](img/Screenshot_105.png)
 
 cat fornested1.sh 
 ```bash
@@ -762,7 +761,7 @@ done
  ## OUTPUT
 $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
-![Alt text](img/74.png)
+![Alt text](img/Screenshot_108.png)
 
 cat forbreak.sh 
 ```bash
@@ -781,8 +780,8 @@ echo "The for loop is completed“
 ## OUTPUT
 $ chmod 755 forbreak.sh
 $ ./forbreak.sh 
-![Alt text](img/75.png)
 
+![Alt text](img/Screenshot_110.png)
 cat forcontinue.sh 
 ```bash
 #!/bin/bash
@@ -800,8 +799,7 @@ echo "The for loop is completed“
 ## OUTPUT
 chmod 755 forcontinue.sh
 ./forcontinue.sh 
-
-![Alt text](img/75.png)
+![Alt text](img/Screenshot_111.png)
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -813,7 +811,7 @@ echo "Hello $name, welcome to my program. "
 ## OUTPUT
 $ chmod 755 exread.sh 
 $ ./exread.sh 
-![Alt text](img/76.png)
+![Alt text](img/Screenshot_112.png)
 
  cat exread1.sh
 ```bash
@@ -825,8 +823,8 @@ echo "Hello $name, welcome to my program. “
 ## OUTPUT
 chmod 755 exread1.sh 
 ./exread1.sh 
-![Alt text](img/77.png)
 
+![Alt text](img/Screenshot_113.png)
 cat funcex.sh
 ```bash
 #!/bin/bash
@@ -845,8 +843,8 @@ fi
 ## OUTPUT
 ./funcex.sh 
 ./funcex.sh 1 2
+![Alt text](img/Screenshot_114.png)
 
-![Alt text](img/78.png)
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -858,7 +856,7 @@ done
 ## OUTPUT
 chmod 777 argshift.sh
 ./argshift.sh 1 2 3
-![Alt text](img/79.png)
+![Alt text](img/Screenshot_117.png)
 
  cat argshift1.sh
 ```bash
@@ -876,7 +874,7 @@ done
 ## OUTPUT
 chmod 777 argshift.sh
 ./argshift.sh 1 2 3
-![Alt text](img/80.png)
+![Alt text](img/Screenshot_117.png)
 
 cat argshift.sh
 ```bash
@@ -890,7 +888,7 @@ set +x
 ```
 ## OUTPUT
  ./argshift.sh 1 2 3
-![Alt text](img/81.png)
+![Alt text](img/Screenshot_117.png)
 
 cat > nc.awk
 ```bash
@@ -922,8 +920,9 @@ ubcdfghj
 
 ## OUTPUT 
 awk -f nc.awk data.dat
-![Alt text](img/82.png)
 
+![Alt text](img/Screenshot_118.png)
+![Alt text](img/Screenshot_119.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -950,7 +949,8 @@ else
 fi
 ```
 ## OUTPUT 
-![Alt text](img/83.png)
+![Alt text](img/Screenshot_120.png)
+![Alt text](img/Screenshot_121.png)
 
 # RESULT:
 The Commands are executed successfully.
